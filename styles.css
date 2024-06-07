@@ -1,0 +1,267 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    background-color: #0D181B;
+    color: #C9AD80;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    padding: 1rem;
+    background-color: #C9AD80;
+    border-bottom: 1px solid #ffffff;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    color: #0D181B;
+}
+
+.logo-container img {
+    height: 75px;
+    margin-right: 10px;
+}
+
+.logo-container span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #0D181B;
+}
+
+nav button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.main-content {
+    padding: 50px 20px;
+}
+
+.main-content h1 {
+    font-size: 2.5em;
+    margin: 0 0 20px;
+}
+
+.main-content p {
+    font-size: 1.2em;
+    margin: 0 0 30px;
+}
+
+.main-content button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #0D181B;
+    background-color: #C9AD80;
+    border: none;
+    cursor: pointer;
+}
+
+/* Image styling */
+.salon-container {
+    margin: 20px 0;
+}
+
+.salon-container img {
+    max-width: 100%;
+}
+
+/* Specific styles for the homepage carousel */
+#salonCarousel.salon-container img{
+    height: 800px;
+}
+
+#haircutCarousel.salon-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#colouringCarousel.salon-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#beardCarousel.salon-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Additional styles for the services page */
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+}
+
+.service-item {
+    width: 30%;
+    margin: 20px;
+}
+
+.service-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.service-item ul li {
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    gap: 1rem; /* Space between the links */
+}
+
+.nav-link {
+    color: #ffffff; /* Grey color for non-active links */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #0D181B; /* Black color on hover */
+}
+
+.nav-link.active {
+    color: #0D181B; /* Brighter color for the active link */
+}
+
+.info-section p {
+    margin: 5px 0; /* Adjust the margin to reduce space between paragraphs */
+}
+
+.stylists-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+}
+
+.stylist-item {
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+}
+ 
+.stylist-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 400px; /* Adjust this value as needed */
+    object-fit: cover;
+}
+
+.stylist-item h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.stylist-item p {
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+/* Center the form container */
+form.booking-form {
+    max-width: 600px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+/* Adjust form input and select elements */
+form.booking-form .form-control,
+form.booking-form .form-select {
+    margin: 5px 0; /* Adjust the margin around each form control */
+    padding: 10px; /* Add padding inside the input box */
+    width: 100%; /* Make the width of form controls 100% of the container */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+/* Ensure the form elements have proper spacing between them */
+form.booking-form .mb-3 {
+    display: flex;
+    flex-wrap: wrap; /* Allow elements to wrap within the container */
+    justify-content: space-between;
+    gap: 10px; /* Space between the form elements */
+    width: 100%;
+}
+
+/* Additional styles for input fields */
+form.booking-form .form-control {
+    margin: 5px 0; /* Adjust the top and bottom margin */
+    padding: 10px; /* Add padding inside the input box */
+}
+
+/* Adjust button styles */
+form.booking-form button {
+    margin-top: 20px; /* Add some margin above the button */
+    padding: 10px 20px; /* Add padding inside the button */
+    width: 100%; /* Make the button take the full width of the container */
+}
+
+.modal-header {
+    color: #0D181B;
+}
+
+.modal-body {
+    color: #0D181B;
+}
+
+/* Center the modal button */
+.modal-footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* Change the button's font color */
+.modal-footer .btn {
+    color: #C9AD80; /* Change this to your desired font color */
+    background-color: #0D181B; /* Optional: Change the background color */
+    border: none; /* Remove the border */
+}
+
+.modal-footer .btn:hover {
+    color: #0D181B; /* Optional: Change the font color on hover */
+    background-color: #C9AD80; /* Optional: Change the background color on hover */
+}
+
+/* Add this to your styles.css */
+.live-waiting-time {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.live-waiting-time h2 {
+    color: #C9AD80;
+    font-size: 1.5em;
+}
+
+
+@media (max-width: 768px) {
+    .service-item {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
